@@ -36,7 +36,7 @@ object RetrofitClient {
         }
 
         Retrofit.Builder()
-            .client(okHttpClient.build()).baseUrl(AppConstants.BASE_URL)
+            .client(okHttpClient.build())
             .baseUrl(AppConstants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build().create(WebService::class.java)
