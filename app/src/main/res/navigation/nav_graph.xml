@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="@string/title_beer_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fab.happybeer.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_beerListFragment"
+            app:destination="@id/beerListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/beerListFragment"
+        android:name="com.fab.happybeer.ui.beerlist.BeerListFragment"
+        android:label="@string/title_beer_main"
+        tools:layout="@layout/fragment_beer_list">
+        <action
+            android:id="@+id/action_beerListFragment_to_beerDetailFragment"
+            app:destination="@id/beerDetailFragment" />
+        <action
+            android:id="@+id/action_beerListFragment_to_favoriteListFragment"
+            app:destination="@id/favoriteListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <dialog
+        android:id="@+id/beerDetailFragment"
+        android:name="com.fab.happybeer.ui.beerdetail.BeerDetailFragment"
+        android:label="@string/title_beer_main"
+        tools:layout="@layout/fragment_beer_detail">
+        <argument
+            android:name="beer"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/favoriteListFragment"
+        android:name="com.fab.happybeer.ui.favoritelist.FavoriteListFragment"
+        android:label="@string/title_favorite_list"
+        tools:layout="@layout/fragment_favorite_list" />
+</navigation>

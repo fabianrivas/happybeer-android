@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">HappyBeer</string>
+
+    // Login
+    <string name="hint_user">Usuario</string>
+    <string name="hit_password">Contraseña</string>
+    <string name="title_login">Login</string>
+    <string name="error_empty_field">Campo vacío</string>
+    <string name="msg_login_error">Usuario y contraseña incorrectos intente de nuevo</string>
+    <string name="title_login_error">¡Error!</string>
+    <string name="title_sign_up">Registrar</string>
+
+    // Beer list
+    <string name="title_beer_main">Beer</string>
+    <string name="title_favorite">Favoritos</string>
+    <string name="msg_add_favorite_success">Agregado a favoritos</string>
+    <string name="msg_add_favorite_error">No se pudo agregar a favoritos</string>
+    <string name="error_occurred">Ocurrió un error</string>
+    <string name="title_retry">Reintentar</string>
+
+    // Beer detail
+    <string name="title_beer_detail">Beer detail</string>
+    <string name="title_yeast">Yeast:</string>
+    <string name="title_abv">ABV</string>
+    <string name="title_ibu">IBU</string>
+    <string name="title_go">OG</string>
+    <string name="title_fg">FG</string>
+    <string name="title_brewers_tips">Brewers tips:</string>
+    <string name="title_food_pairing">Food Pairing</string>
+    <string name="title_hops">Hops:</string>
+    <string name="title_malt">Malt:</string>
+    <string name="msg_volume">%1$s %2$s</string>
+    <string name="msg_abv">%1$s%%</string>
+    <string name="msg_first_brewed">First Brewed: %1$s</string>
+
+    // Favorites
+    <string name="title_favorite_list">Beer saved</string>
+    <string name="msg_rate_beer">Rate this Beer</string>
+
+    // Views
+    <string name="msg_loading">Loading...</string>
+    <string name="action_logout">Salir</string>
+    <string name="msg_view_error">Ocurrio un error</string>
+    <string name="msg_view_empty">Sin registros</string>
+    <string name="title_logout">Aviso</string>
+    <string name="msg_logout">¿Deseas salir de la aplicación?</string>
+
+
+
+</resources>
